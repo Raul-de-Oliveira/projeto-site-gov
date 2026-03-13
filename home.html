@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/home.css">
+<link rel="icon" href="images/brasil.png">
+<title>Página principal</title>
+</head>
+
+<body>
+
+<nav class="menu">
+
+<div class="menu-left">
+
+<button class="burger" onclick="toggleMenu()">☰</button>
+
+<h1 class="logo">
+<span style="color:#285aaa;">g</span>
+<span style="color:#eec214;">o</span>
+<span style="color:#22972e;">v</span>
+<span style="color:#285aaa;">.</span>
+<span style="color:#285aaa;">b</span>
+<span style="color:#eec214;">r</span>
+</h1>
+
+</div>
+
+<div class="menu-right">
+<button class="perfil-btn" onclick="togglePerfil()">
+<img src="https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y" alt="Perfil" class="avatar">
+</button>
+</div>
+
+</nav>
+
+<!-- SIDEBAR PERFIL -->
+
+    <aside id="sidebar-perfil" class="sidebar-perfil">
+
+    <div class="sidebar-perfil-header">
+    <button class="close-btn" onclick="fecharPerfil()">✕</button>
+</div>
+
+    <div class="perfil-info">
+    <img src="https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y" alt="Perfil" class="avatar-grande">
+    <h3>Usuário</h3>
+    <p>admin@123</p>
+</div>
+
+    <ul>
+<li><a href="#">⚙️ Configurações</a></li>
+<li><a href="#">🌐 Idioma</a></li>
+<li><a href="#">👤 Acessibilidades</a></li>
+<li><a href="#">❓ Ajuda</a></li>
+    </ul>
+    <div class="logout-perfil">
+    <button onclick="logout()">Sair</button>
+    </div>
+</aside>
+
+<!-- SIDEBAR -->
+
+    <aside id="sidebar" class="sidebar">
+
+    <div class="sidebar-header">
+<button class="close-btn" onclick="fecharMenu()">✕</button>
+    </div>
+
+        <ul>
+
+    <li><a href="#home">Início</a></li>
+
+    <li><a href="#serviços">Serviços</a></li>
+
+    <li><a href="#noticias">Notícias</a></li>
+
+    <li><a href="#informacao">Acesso à informação</a></li>
+
+    <li><a href="#legislacao">Legislação</a></li>
+
+    <li><a href="#orgaos">Órgãos do governo</a></li>
+
+        </ul>
+    </aside>
+<main>
+
+    <section class="home" id="home">
+        <h1>Bem vindo a sua conta </h1>
+        <p>Acesse rapidamente os serviços disponíveis no portal.</p>
+    </section>
+
+
+<!--Serviços-->
+    <section class="serviços" id="serviços">
+    <h1>Serviços</h1>
+    
+<div class="area-pesquisa">
+    <input type="text" placeholder="Pesquisar serviços do governo">
+    <button type="submit">🔎</button>
+</div>
+    </section>
+<!--Noticias-->
+<section class="noticias" id="noticias">
+
+<h1>Notícias</h1>
+
+<div class="cards-noticias">
+
+<div class="card">
+<h3>Novo programa social</h3>
+<p>Veja como participar do novo programa do governo.</p>
+<a href="#">Ler mais</a>
+</div>
+
+<div class="card">
+<h3>Investimentos em infraestrutura</h3>
+<p>Obras em rodovias começam este mês.</p>
+<a href="#">Ler mais</a>
+</div>
+
+<div class="card">
+<h3>Serviços digitais</h3>
+<p>Mais serviços agora disponíveis online.</p>
+<a href="#">Ler mais</a>
+</div>
+
+<div class="card">
+<h3>Concursos públicos</h3>
+<p>Vagas para concursos públicos.</p>
+<a href="#">Ler mais</a>
+</div>
+
+</div>
+
+</section>
+
+<!--acesso a informação-->
+<section class="informacao" id="informacao">
+
+<h1>Acesso à informação</h1>
+
+<div class="info-cards">
+
+<div class="info-card">
+<h3>📊 Dados Abertos</h3>
+<p>Consulte dados públicos disponibilizados pelo governo.</p>
+<a href="#">Acessar</a>
+</div>
+
+<div class="info-card">
+<h3>📄 Leis e Normas</h3>
+<p>Veja legislações, decretos e regulamentos oficiais.</p>
+<a href="#">Acessar</a>
+</div>
+
+<div class="info-card">
+<h3>💰 Portal da Transparência</h3>
+<p>Acompanhe gastos públicos e investimentos.</p>
+<a href="#">Acessar</a>
+</div>
+
+<div class="info-card">
+<h3>📢 Ouvidoria</h3>
+<p>Envie sugestões, reclamações ou denúncias.</p>
+<a href="#">Acessar</a>
+</div>
+
+</div>
+
+</section>
+
+<!--legislaçao-->
+<section class="legislacao" id="legislacao">
+
+<h1>Legislação</h1>
+
+<div class="leis-cards">
+
+<div class="lei-card">
+<h3>📜 Constituição Federal</h3>
+<p>Consulte a constituição e suas atualizações oficiais.</p>
+<a href="#">Acessar</a>
+</div>
+
+<div class="lei-card">
+<h3>📄 Leis Federais</h3>
+<p>Veja todas as leis aprovadas em âmbito federal.</p>
+<a href="#">Acessar</a>
+</div>
+
+<div class="lei-card">
+<h3>⚖️ Decretos</h3>
+<p>Acesse decretos publicados pelo governo.</p>
+<a href="#">Acessar</a>
+</div>
+
+<div class="lei-card">
+<h3>📑 Normas e Regulamentos</h3>
+<p>Normas administrativas e regulamentos oficiais.</p>
+<a href="#">Acessar</a>
+</div>
+
+</div>
+</section>
+ <!--orgaos publicos-->
+ <section class="orgaos" id="orgaos">
+
+<h1>Órgãos públicos</h1>
+
+<div class="orgaos-cards">
+
+<div class="orgao-card">
+<h3>🎓 Ministério da Educação</h3>
+<p>Responsável pelas políticas educacionais do país.</p>
+<a href="#">Acessar</a>
+</div>
+
+<div class="orgao-card">
+<h3>🏥 Ministério da Saúde</h3>
+<p>Coordena políticas de saúde pública e o SUS.</p>
+<a href="#">Acessar</a>
+</div>
+
+<div class="orgao-card">
+<h3>💰 Ministério da Economia</h3>
+<p>Gerencia políticas econômicas e financeiras.</p>
+<a href="#">Acessar</a>
+</div>
+
+<div class="orgao-card">
+<h3>⚖️ Ministério da Justiça</h3>
+<p>Atua na segurança pública e sistema jurídico.</p>
+<a href="#">Acessar</a>
+</div>
+
+</div>
+
+</section>
+
+
+</main>
+    
+<script src="scripts/home.js"></script>
+
+</body>
+</html>
